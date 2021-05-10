@@ -17,6 +17,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.config_stuff.txt
+config_stuff.txt
+firebase_stuff.txt
 
 npm-debug.log*
 yarn-debug.log*
