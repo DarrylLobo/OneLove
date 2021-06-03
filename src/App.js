@@ -11,19 +11,20 @@ import {
 import TinderCards from "./TinderCards";
 import SwipeButtons from './SwipeButtons';
 
+import Chats from "./Chats";
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
         <Switch>
-          {/*Chats screen*/}
           <Route path="/chat">
-            <h1>Chat with me here bebe</h1>
+           <Header backButton="/"/>  
+            <Chats />
           </Route>
-          {/*Main screen at the bottom, default since Java script runs sequentially it will stop at this page*/}
           <Route path="/">
+            <Header />
             <TinderCards />
             <SwipeButtons />
           </Route>
